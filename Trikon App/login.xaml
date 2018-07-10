@@ -15,8 +15,8 @@
         <TextBox HorizontalAlignment="Left" Height="20" Margin="65,155,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="170" Background="#FF36393F" BorderBrush="White" Foreground="White" FontFamily="Segoe UI Emoji" TextChanged="TextBox_TextChanged"/>
         <Label Content="Trikon" HorizontalAlignment="Left" Margin="65,60,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Keep Calm Med" FontSize="48" Height="64" Width="170"/>
         <PasswordBox HorizontalAlignment="Left" Margin="65,190,0,0" VerticalAlignment="Top" Width="170" Height="20" Background="#FF36393F" BorderBrush="White" Password="Password" Foreground="White"/>
-        <Button Content="Login" HorizontalAlignment="Left" Margin="65,235,0,0" VerticalAlignment="Top" Width="75" Background="#FF007ACC" BorderBrush="White" Foreground="White" Click="Button_Click"/>
-        <Button Content="Close" HorizontalAlignment="Left" Margin="160,235,0,0" VerticalAlignment="Top" Width="75" Background="#FF007ACC" BorderBrush="White" Foreground="White"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="65,235,0,0" VerticalAlignment="Top" Width="75" Background="#FF007ACC" BorderBrush="White" Foreground="White" Click="login_Click"/>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="160,235,0,0" VerticalAlignment="Top" Width="75" Background="#FF007ACC" BorderBrush="White" Foreground="White" Click="close_Click"/>
 
     </Grid>
 </Window>

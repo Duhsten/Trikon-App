@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Trikon_App"
         mc:Ignorable="d"
-        Title="Trikon" Height="472" Width="834" WindowStartupLocation="CenterScreen" Background="#FF2F3136">
+        Title="Trikon" Height="642" Width="1134.381" WindowStartupLocation="CenterScreen" Background="#FF2F3136">
+
     <Grid>
+        <TabControl HorizontalAlignment="Left" Height="526" Margin="0,85,0,0" VerticalAlignment="Top" Width="1126" Background="#FF36393F" SelectedIndex="1">
+            <TabItem Header=" Home " Background="#FF36393F" FontFamily="Roboto Medium" Foreground="White" BorderBrush="#00A07272" FontSize="24" Margin="845,0,-845,0">
+                <Grid Background="#FF36393F"/>
+            </TabItem>
+            <TabItem Header=" Software " Background="#FF36393F" BorderBrush="#00ACACAC" FontSize="24" FontFamily="Roboto Medium" Foreground="White" Margin="845,0,-845,0">
+                <Grid Background="#FF36393F">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="111*"/>
+                        <ColumnDefinition Width="449*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header=" Games " Background="#FF36393F" BorderBrush="#00ACACAC" FontSize="24" FontFamily="Roboto Medium" Foreground="White" Margin="845,0,-845,0">
+                <Grid Background="#FF36393F">
+                    <Image HorizontalAlignment="Left" Height="120" Margin="27,31,0,0" VerticalAlignment="Top" Width="535" Source="realitycityalphabanner.jpg" Stretch="UniformToFill" StretchDirection="DownOnly"/>
+                    <Label Content="Reality City" HorizontalAlignment="Left" Margin="42,35,0,0" VerticalAlignment="Top" Foreground="White"/>
+                    <Label Content="Prototyping" HorizontalAlignment="Left" Margin="459,34,0,0" VerticalAlignment="Top" Foreground="Yellow" FontSize="16" Height="29"/>
+                    <Label Content="A semi-realistic city roleplaying game with the intention of developing a platform for modders to go wild" HorizontalAlignment="Left" Margin="42,74,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Roboto" FontSize="10"/>
+                    <Button Content="Unavailable" HorizontalAlignment="Left" Margin="52,116,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Height="25" Background="#007A3337" Foreground="White"/>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+        <Label Content="Trikon" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Foreground="White" FontSize="48" FontFamily="Keep Calm Med"/>
 
     </Grid>
 </Window>

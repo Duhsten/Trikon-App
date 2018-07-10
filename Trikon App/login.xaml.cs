@@ -30,10 +30,15 @@ namespace Trikon_App
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void login_Click(object sender, RoutedEventArgs e)
         {
             mainhub hub = new mainhub();
             hub.Show();
+            this.Close();
+        }
+
+        private void close_Click(object sender, RoutedEventArgs e)
+        {
             this.Close();
         }
     }
