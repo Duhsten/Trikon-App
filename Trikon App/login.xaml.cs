@@ -1,4 +1,7 @@
-﻿using System;
+﻿using GameSparks.NET.Infrastructure.Settings;
+using GameSparks.NET.Services;
+using GameSparks.NET.Services.Authentication.Requests;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +26,8 @@ namespace Trikon_App
         public MainWindow()
         {
             InitializeComponent();
+            
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -32,6 +37,19 @@ namespace Trikon_App
 
         private void login_Click(object sender, RoutedEventArgs e)
         {
+            GameSparksSettings.SetApiKey("xxxx");
+            GameSparksSettings.SetCredentials("xxxxx");
+            GameSparksSettings.SetSecret("xxxxx");
+            GameSparksSettings.SetIsLive(false);
+            var authService = new GameSparksAuthenticationService();
+            string user = username.Text;
+            string pass = password.Password;
+            //Auth Login
+            var authRequest = new AuthenticationRequest(user, pass);
+            var response = authService.AuthenticationRequest(authRequest);
+            Console.WriteLine("Auth token: " + response.AuthToken);
+            Console.WriteLine("User ID: " + response.UserId);
+            // Load Hub
             mainhub hub = new mainhub();
             hub.Show();
             this.Close();
