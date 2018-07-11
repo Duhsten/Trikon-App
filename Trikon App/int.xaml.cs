@@ -24,16 +24,11 @@ namespace Trikon_App
         public @int()
         {
             InitializeComponent();
-          
-         
-            loadNext();
-        }
-        public void loadNext()
-        {
-           
+
             MainWindow mw = new MainWindow();
             mw.Show();
             this.Close();
         }
+
     }
 }
