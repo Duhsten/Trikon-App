@@ -17,6 +17,7 @@
         <PasswordBox Name="password" HorizontalAlignment="Left" Margin="65,190,0,0" VerticalAlignment="Top" Width="170" Height="20" Background="#FF36393F" BorderBrush="White" Password="Password" Foreground="White"/>
         <Button Content="Login" HorizontalAlignment="Left" Margin="65,235,0,0" VerticalAlignment="Top" Width="75" Background="#FF007ACC" BorderBrush="White" Foreground="White" Click="login_Click"/>
         <Button Content="Close" HorizontalAlignment="Left" Margin="160,235,0,0" VerticalAlignment="Top" Width="75" Background="#FF007ACC" BorderBrush="White" Foreground="White" Click="close_Click"/>
+        <TextBlock Name="ErrorMessage" HorizontalAlignment="Left" Margin="65,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextAlignment="Center" Foreground="Red" FontFamily="Segoe UI Symbol"/>
 
     </Grid>
 </Window>
