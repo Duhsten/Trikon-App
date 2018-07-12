@@ -32,6 +32,8 @@
 
         </TabControl>
         <Label Content="Trikon" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Foreground="White" FontSize="48" FontFamily="Keep Calm Med"/>
+        <TextBlock Name="usernametxt" HorizontalAlignment="Left" Margin="1039,10,0,0" TextWrapping="Wrap" Text="User" VerticalAlignment="Top" Foreground="White" Width="77"/>
+        <TextBlock x:Name="usernametxt_Copy" HorizontalAlignment="Left" Margin="950,10,0,0" TextWrapping="Wrap" Text="Welcome," VerticalAlignment="Top" Foreground="White" Width="85" TextAlignment="Right"/>
 
     </Grid>
 </Window>

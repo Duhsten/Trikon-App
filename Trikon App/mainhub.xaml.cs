@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GameSparks.NET.Services;
+using GameSparks.NET.Services.Player.Requests;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,16 @@ namespace Trikon_App
         public mainhub()
         {
             InitializeComponent();
+            GetPlayerInfo();
+        }
+
+        public void GetPlayerInfo()
+        {
+            string userID = Properties.Settings.Default.UserID;
+            var playerService = new GameSparksPlayerService();
+            var response = playerService.AccountDetailsRequest(new AccountDetailsRequest(userID));
+            usernametxt.Text = response.DisplayName;
+            Console.WriteLine("User = " + userID);
         }
     }
 }

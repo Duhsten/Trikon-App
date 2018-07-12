@@ -38,8 +38,8 @@ namespace Trikon_App
         private void login_Click(object sender, RoutedEventArgs e)
         {
             GameSparksSettings.SetApiKey("xxx");
-            GameSparksSettings.SetCredentials("xxxxx");
-            GameSparksSettings.SetSecret("xxxxxx");
+            GameSparksSettings.SetCredentials("xxx");
+            GameSparksSettings.SetSecret("xxx");
             GameSparksSettings.SetIsLive(false);
             var authService = new GameSparksAuthenticationService();
             string user = username.Text;
@@ -52,12 +52,15 @@ namespace Trikon_App
             {
                 Console.WriteLine("Incorrect Login Information");
                 ErrorMessage.Text = "Incorrect Login Information";
+              
             }
             else
             {
                 ErrorMessage.Text = "";
                 Console.WriteLine("Auth token: " + response.AuthToken);
                 Console.WriteLine("User ID: " + response.UserId);
+                Properties.Settings.Default.UserID = response.UserId;
+               
                 // Load Hub
                 mainhub hub = new mainhub();
                 hub.Show();

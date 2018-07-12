@@ -24,7 +24,7 @@ namespace Trikon_App
         public @int()
         {
             InitializeComponent();
-
+            Properties.Settings.Default.UserID = "";
             MainWindow mw = new MainWindow();
             mw.Show();
             this.Close();
